@@ -1,0 +1,54 @@
+/* Importar los demás archivos */
+@import url("layout.css");
+@import url("components.css");
+@import url("responsive.css");
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root{
+    --color-principal:#0f172a;
+    --color-secundario:#1e293b;
+    --color-acento:#38bdf8;
+    --color-texto:#f8fafc;
+    --color-gris:#94a3b8;
+
+    --fuente:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ESTILOS GENERALES */
+body{
+    font-family: var(--fuente);
+    color: var(--color-texto);
+    line-height: 1.6;
+
+    background:
+    radial-gradient(circle at top,#1e3a8a 0%,#0f172a 30%,#020617 70%,#000000 100%);
+
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
