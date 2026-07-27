@@ -1,54 +1,141 @@
-/* Importar los demás archivos */
 @import url("layout.css");
 @import url("components.css");
 @import url("responsive.css");
 
-/* RESET */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-/* VARIABLES */
 :root{
-    --color-principal:#0f172a;
-    --color-secundario:#1e293b;
-    --color-acento:#38bdf8;
+
+    --color-fondo:#050816;
+    --color-fondo-secundario:#0f172a;
+    --color-principal:#2563eb;
+    --color-principal-hover:#3b82f6;
     --color-texto:#f8fafc;
-    --color-gris:#94a3b8;
+    --color-texto-secundario:#cbd5e1;
+    --color-tarjeta:#111827;
+    --color-borde:#1e293b;
 
-    --fuente:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --sombra:0 10px 30px rgba(37,99,235,.20);
+
+    --radio:16px;
+
+    --transicion:.35s;
+
 }
 
-/* ESTILOS GENERALES */
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
 body{
-    font-family: var(--fuente);
-    color: var(--color-texto);
-    line-height: 1.6;
 
-    background:
-    radial-gradient(circle at top,#1e3a8a 0%,#0f172a 30%,#020617 70%,#000000 100%);
+    font-family:"Poppins",sans-serif;
 
-    overflow-x:hidden;
-}
+    background:linear-gradient(
+        180deg,
+        #050816 0%,
+        #0f172a 45%,
+        #1d4ed8 100%
+    );
 
-a{
-    text-decoration: none;
-    color: inherit;
-}
+    color:var(--color-texto);
 
-ul{
-    list-style: none;
+    line-height:1.7;
+
 }
 
 img{
-    width: 100%;
-    display: block;
+
+    width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
 }
 
 .contenedor{
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+
+}
+
+section{
+
+    padding:80px 0;
+
+}
+
+h1,h2,h3{
+
+    font-weight:700;
+
+}
+
+h2{
+
+    font-size:2.3rem;
+
+    margin-bottom:20px;
+
+}
+
+p{
+
+    color:var(--color-texto-secundario);
+
+}
+
+.boton{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:14px 32px;
+
+    background:var(--color-principal);
+
+    color:white;
+
+    border-radius:50px;
+
+    transition:var(--transicion);
+
+    font-weight:600;
+
+}
+
+.boton:hover{
+
+    background:var(--color-principal-hover);
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--sombra);
+
 }
