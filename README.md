@@ -11,7 +11,7 @@ El proyecto fue desarrollado utilizando tecnologías web básicas, enfocándose 
 
 👉 **Puedes visitar el proyecto aquí:**
 
-### 🌐 https://tiny-crisp-79af88.netlify.app/
+### 🌐  https://playful-sopapillas-9f7785.netlify.app/
 
 ---
 
