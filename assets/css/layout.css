@@ -253,3 +253,83 @@ tbody tr:hover{
     margin:10px 0;
 
 }
+/*======================
+CATEGORÍAS
+======================*/
+
+.contenido-categorias{
+
+    display:grid;
+
+    grid-template-columns:260px 1fr;
+
+    gap:35px;
+
+    align-items:start;
+
+}
+
+.filtros{
+
+    position: sticky;
+
+    top:120px;
+
+    max-height:calc(100vh - 140px);
+
+    overflow-y:auto;
+
+}
+
+.lista-articulos{
+
+    width:100%;
+
+}
+.categorias-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(12,1fr);
+
+    gap:25px;
+
+}
+
+.categorias-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(12,1fr);
+
+    gap:25px;
+
+}
+
+/* Primera fila */
+
+.categorias-grid .tarjeta:nth-child(1){
+
+    grid-column: span 4;
+
+}
+
+.categorias-grid .tarjeta:nth-child(2){
+
+    grid-column: span 4;
+
+}
+
+.categorias-grid .tarjeta:nth-child(3){
+
+    grid-column: span 4;
+
+}
+
+/* Desde la tarjeta 4 hasta la 15 */
+
+.categorias-grid .tarjeta:nth-child(n+4){
+
+    grid-column: span 3;
+
+}
